@@ -1,0 +1,193 @@
+@import 'base.less';
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    background: #fff;
+}
+a {
+    cursor: pointer;
+    &:hover {
+        color: @red_orange;
+        text-decoration: none;
+    }
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+button i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.table thead th {
+    border-width: 1px;
+}
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    &.flex-col {/*垂直*/
+        flex-direction: column;
+    }
+    &.flex-row {/*水平*/
+        flex-direction: row;
+    }
+    &.wrap{
+        flex-wrap: wrap;
+    }
+    &.justify-center{ /*水平居中*/
+        justify-content: center;
+    }
+    &.justify-between{
+        justify-content: space-between;
+    }
+    &.justify-around{
+        justify-content: space-around;
+    }
+    /*交叉轴*/
+    &.items-center{/*垂直居中*/
+        align-items: center;
+    }
+    &.items-stretch{/*充满*/
+        align-items: stretch;
+    }
+    &.items-baseline{/*第一行文字的基准线*/
+        align-items: baseline;
+    }
+    /*作用于多线轴*/
+    &.content-center{
+        align-content: center;
+    }
+    &.content-stretch{/*平分充满容器*/
+        align-content: stretch;
+    }
+    &.content-between{
+        align-content: space-between;
+    }
+    &.content-around{
+        align-content: space-around;
+    }
+    .order0{/*定义项目的排序,值越小越靠前*/
+        order:0; // 默认值0
+    }
+    .flex-group1{ /*项目的放大比例*/
+        flex-grow: 1;//默认值0
+    }
+    .flex-shrink{/*设置项目的缩小比例 默认值1 值为负值是无效*/
+        flex-shrink: 1;
+    }
+    .basic{/*设置固定宽度*/
+        flex-basis: auto;
+    }
+    .align-self{/*允许单个项目的对齐方式,默认继承 algin-items*/
+        align-self: auto;
+    }
+}
+
+/*通用调整*/
+.pageContainer {
+    background: @gray_f5;
+    margin: 0 0 0 240px;
+    padding-top:60px;
+    height:100%;
+    overflow: hidden;
+}
+
+.topOper {
+    margin-top: 15px !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pd15 {
+    padding: 15px;
+}
+
+/*head样式*/
+
+/*字体颜色*/
+.orange {
+    color: @red_orange;
+}
+
+.red {
+    color: @red;
+}
+
+.green {
+    color: @green;
+}
+
+.c333 {
+    color: @gray_33;
+}
+
+.c666 {
+    color: @gray_66;
+}
+
+.c999 {
+    color: @gray_99;
+}
+
+/*字体大小*/
+.fs12 {
+    font-size: 12px;
+}
+
+.fs13 {
+    font-size: 13px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.fs15 {
+    font-size: 15px;
+}
+
+.fs16 {
+    font-size: 16px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.fw500 {
+    font-weight: 500;
+}

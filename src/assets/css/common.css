@@ -1,0 +1,181 @@
+@charset 'utf-8';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  background: #fff;
+}
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: #FF4400;
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+button i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.table thead th {
+  border-width: 1px;
+}
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  /*交叉轴*/
+  /*作用于多线轴*/
+}
+.flex.flex-col {
+  /*垂直*/
+  flex-direction: column;
+}
+.flex.flex-row {
+  /*水平*/
+  flex-direction: row;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+.flex.justify-center {
+  /*水平居中*/
+  justify-content: center;
+}
+.flex.justify-between {
+  justify-content: space-between;
+}
+.flex.justify-around {
+  justify-content: space-around;
+}
+.flex.items-center {
+  /*垂直居中*/
+  align-items: center;
+}
+.flex.items-stretch {
+  /*充满*/
+  align-items: stretch;
+}
+.flex.items-baseline {
+  /*第一行文字的基准线*/
+  align-items: baseline;
+}
+.flex.content-center {
+  align-content: center;
+}
+.flex.content-stretch {
+  /*平分充满容器*/
+  align-content: stretch;
+}
+.flex.content-between {
+  align-content: space-between;
+}
+.flex.content-around {
+  align-content: space-around;
+}
+.flex .order0 {
+  /*定义项目的排序,值越小越靠前*/
+  order: 0;
+}
+.flex .flex-group1 {
+  /*项目的放大比例*/
+  flex-grow: 1;
+}
+.flex .flex-shrink {
+  /*设置项目的缩小比例 默认值1 值为负值是无效*/
+  flex-shrink: 1;
+}
+.flex .basic {
+  /*设置固定宽度*/
+  flex-basis: auto;
+}
+.flex .align-self {
+  /*允许单个项目的对齐方式,默认继承 algin-items*/
+  align-self: auto;
+}
+/*通用调整*/
+.pageContainer {
+  /* background: #f5f5f5; */
+  margin: 0 0 0 240px;
+  padding-top: 60px;
+  height: 100%;
+  overflow: hidden;
+}
+.topOper {
+  margin-top: 15px !important;
+}
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.pd15 {
+  padding: 15px;
+}
+/*head样式*/
+/*字体颜色*/
+.orange {
+  color: #FF4400;
+}
+.red {
+  color: #FF0000;
+}
+.green {
+  color: #39b54a;
+}
+.c333 {
+  color: #333333;
+}
+.c666 {
+  color: #666666;
+}
+.c999 {
+  color: #999999;
+}
+/*字体大小*/
+.fs12 {
+  font-size: 12px;
+}
+.fs13 {
+  font-size: 13px;
+}
+.fs14 {
+  font-size: 14px;
+}
+.fs15 {
+  font-size: 15px;
+}
+.fs16 {
+  font-size: 16px;
+}
+.fs18 {
+  font-size: 18px;
+}
+.fs20 {
+  font-size: 20px;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw500 {
+  font-weight: 500;
+}
