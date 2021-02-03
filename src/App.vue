@@ -1,7 +1,7 @@
 <template>
     <Header :width="width" :height="height" @changeSidebar="changeSidebar"></Header>
     <SideBar :width="width" :height="height"></SideBar>
-    <div class="pageContainer" :style="`padding-top:${height}px;margin-left:${width}px`">
+    <div class="pageContainer" :style="`padding-top:${height+20}px;margin-left:${width}px`">
         <router-view />
     </div>
 </template>
@@ -51,7 +51,6 @@ export default {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     height:100vh;
     color: #2c3e50;
 }

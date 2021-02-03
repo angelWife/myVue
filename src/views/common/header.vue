@@ -6,7 +6,6 @@
       <div class="headerOper flex-group1 flex justify-between">
           <div class="oper-left">
               <span class="iconfont icon-liebiao" @click="$emit('changeSidebar')"></span>
-              {{width}}
           </div>
           <div class="oper-right"></div>
       </div>

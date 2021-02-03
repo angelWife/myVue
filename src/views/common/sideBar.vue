@@ -1,8 +1,16 @@
 <template>
-  <div class="pageSide" :style="`width:${width}px;padding-top:${height}px;`"></div>
+  <div class="pageSide" :style="`width:${width}px;padding-top:${height}px;`">
+      <ul>
+          <li v-for="(item,index) in navList" :key="index">
+              <router-link @click="changeNav(index)" :class="item.active?'active':''" :to="item.path">{{item.title}}</router-link>
+          </li>
+      </ul>
+  </div>
 </template>
 
 <script>
+import {computed,getCurrentInstance} from 'vue';
+import {navList} from '../../assets/js/sidebar.js'
 export default {
   name: "PageSide",
   props:{
@@ -18,7 +26,17 @@ export default {
         },
     },
   data() {
-    return {};
+    return {
+        navList,
+    };
+  },
+  setup() {
+      const changeNav = (index)=>{
+
+      }
+      return {
+          changeNav
+      }
   }
 };
 </script>
@@ -32,5 +50,27 @@ export default {
     height: 100vh;
     background: #f1f1f1;
     transition: all 0.3s;
+    li{
+        height:40px;
+        line-height: 40px;
+        font-size:16px;
+        overflow: hidden;
+        cursor: pointer;
+        a{
+            display: block;
+            height:100%;
+            padding:0 20px;
+            color:#333;
+            text-decoration: none;
+            transition: all 0.3s;
+            &:hover{
+                color:#0099ff;
+            }
+            &.active{
+                background: #0099ff;
+                color:#fff;
+            }
+        }
+    }
 }
 </style>

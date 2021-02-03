@@ -104,11 +104,12 @@ button i {
 }
 /*通用调整*/
 .pageContainer {
-  /* background: #f5f5f5; */
+  background: #ffffff;
   margin: 0 0 0 240px;
-  padding-top: 60px;
+  padding: 20px;
   height: 100%;
   overflow: hidden;
+  overflow-y: auto;
 }
 .topOper {
   margin-top: 15px !important;
