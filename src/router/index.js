@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 import vueapi from "../views/vueApi/global.vue";
+import testPage from "../views/testPage/index.vue";
 
 const routes = [
   {
     path: "/",
     name: "Vueapi",
     component: vueapi
+  },
+  {
+    path: "/testPage",
+    name: "TestPage",
+    component: testPage
   },
 //   {
 //     path: "/about",

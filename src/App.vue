@@ -24,6 +24,7 @@ export default {
     setup() {
         console.log(ref(0))
         const { ctx } = getCurrentInstance();
+        console.log(ctx)
         let height = computed (()=>ctx.$store.state.headerHeight)   
         let width = computed (()=>ctx.$store.state.sideBar)   
         const changeSidebar = ()=>{

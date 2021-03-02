@@ -1,8 +1,8 @@
 <template>
   <div class="pageSide" :style="`width:${width}px;padding-top:${height}px;`">
       <ul>
-          <li v-for="(item,index) in navList" :key="index">
-              <router-link @click="changeNav(index)" :class="item.active?'active':''" :to="item.path">{{item.title}}</router-link>
+          <li v-for="(item,index) in navList" :key="index" @click="changeNav(index)">
+              <router-link :class="item.active?'active':''" :to="item.path">{{item.title}}</router-link>
           </li>
       </ul>
   </div>
@@ -32,7 +32,12 @@ export default {
   },
   setup() {
       const changeNav = (index)=>{
-
+          navList.filter((v,i)=>{
+              v.active = false;
+              if(i==index){
+                  v.active = true;
+              }
+          })
       }
       return {
           changeNav
@@ -63,6 +68,7 @@ export default {
             color:#333;
             text-decoration: none;
             transition: all 0.3s;
+            background: #f9f9f9;
             &:hover{
                 color:#0099ff;
             }
