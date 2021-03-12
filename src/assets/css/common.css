@@ -86,6 +86,12 @@ button i {
   /*定义项目的排序,值越小越靠前*/
   order: 0;
 }
+.flex .order1 {
+  order: 1;
+}
+.flex .order2 {
+  order: 2;
+}
 .flex .flex-group1 {
   /*项目的放大比例*/
   flex-grow: 1;
@@ -103,13 +109,8 @@ button i {
   align-self: auto;
 }
 /*通用调整*/
-.pageContainer {
-  background: #ffffff;
-  margin: 0 0 0 240px;
+.pageFrame {
   padding: 20px;
-  height: 100%;
-  overflow: hidden;
-  overflow-y: auto;
 }
 .topOper {
   margin-top: 15px !important;

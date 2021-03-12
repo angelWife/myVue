@@ -1,14 +1,13 @@
 const navList = [
-    {
-        title:'全局API',
-        path:'/',
-        active:true
-    },{
-        title:'测试跳转',
-        path:'/testPage',
-        active:false
-    }
+  {
+    title: "全局API",
+    path: "/",
+    active: true
+  },
+  {
+    title: "ES6",
+    path: "/es6",
+    active: false
+  }
 ];
-export {
-    navList
-};
+export { navList };
